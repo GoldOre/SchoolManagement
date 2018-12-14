@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolManagement", "SchoolManagement\SchoolManagement.csproj", "{D71C66E7-1E94-48C1-BB0C-00035D5F7947}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolManagement.UI", "SchoolManagement\SchoolManagement.UI.csproj", "{D71C66E7-1E94-48C1-BB0C-00035D5F7947}"
+	ProjectSection(ProjectDependencies) = postProject
+		{975707E8-ECFD-42B1-B40A-401CC8DFE5C6} = {975707E8-ECFD-42B1-B40A-401CC8DFE5C6}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolManagement.DAL", "SchoolManagement.DAL\SchoolManagement.DAL.csproj", "{C323B7B0-F32F-4FFD-8BFA-4B930FBC49E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolManagement.BAL", "SchoolManagement.BAL\SchoolManagement.BAL.csproj", "{975707E8-ECFD-42B1-B40A-401CC8DFE5C6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C323B7B0-F32F-4FFD-8BFA-4B930FBC49E0} = {C323B7B0-F32F-4FFD-8BFA-4B930FBC49E0}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,14 @@ Global
 		{D71C66E7-1E94-48C1-BB0C-00035D5F7947}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D71C66E7-1E94-48C1-BB0C-00035D5F7947}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D71C66E7-1E94-48C1-BB0C-00035D5F7947}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C323B7B0-F32F-4FFD-8BFA-4B930FBC49E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C323B7B0-F32F-4FFD-8BFA-4B930FBC49E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C323B7B0-F32F-4FFD-8BFA-4B930FBC49E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C323B7B0-F32F-4FFD-8BFA-4B930FBC49E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{975707E8-ECFD-42B1-B40A-401CC8DFE5C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{975707E8-ECFD-42B1-B40A-401CC8DFE5C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{975707E8-ECFD-42B1-B40A-401CC8DFE5C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{975707E8-ECFD-42B1-B40A-401CC8DFE5C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
